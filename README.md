@@ -18,9 +18,9 @@ ML
   Where
   ExtraTrees and XGBRegressor performed the best
 
-  Chose XGBRegressor as the final model
-  train_test_split in 90% to 10% ratio
-  Hyperparameters - learning_rate = 0.4, max_depth = 9, n_estimators = 1000, reg_alpha = 0
+  Since the validation and train accuracy was less variate and had low mean squared errors, I chose XGBRegressor as the final regressor.
+  The training and validation data was split in 9:1 ratio.
+  Hyperparameters :- learning_rate = 0.4, max_depth = 9, n_estimators = 1000, reg_alpha = 0
 
 Final Submission
   Found a few negative predicted values in the prediction
