@@ -5,8 +5,8 @@ Wipro Hackathon
 EDA
   Checked for duplicates and NA values, found none.
   GHI = DNI*cos(Zenith-Angle) + DHI
-  Using Pearson's correlation visualized a heatmap that showed relationship between Features
-  So GHI, DNI, DHI have high correlation with Relative Humidity & Solar Zenith Angle. Moderate Correlation with Hour, Temperature & Wind Speed. Temperature has high correlation     with Precipitable Water. Precipitable Water has High correlation with Dew Point.
+  Using Pearson's correlation visualized a heatmap that showed relationship between all Features.
+  So GHI, DNI, DHI had high correlation with Relative Humidity & Solar Zenith Angle. Moderate Correlation with Hour, Temperature & Wind Speed. Temperature has high correlation       with Precipitable Water. Precipitable Water has High correlation with Dew Point.
   Made a separate column to store date instead of 5 columns of Minute, Hour, Day, Month and Year
   Date = pd.to_datetime(df[['Year', 'Month', 'Day', 'Hour', 'Minute']])
   Plotted the data for GHI over time and found yearly seasonality and trends in data
@@ -16,14 +16,13 @@ ML
   train_test_split in 80% to 20% ratio
   Linear Regressor, ExtraTrees, DecisionTrees, XGBRegressor
   Where
-  Linear Regressor performed bad
-  DecisionTrees performed good enough
-  ExtraTrees and XGBRegressor performed well
+  ExtraTrees and XGBRegressor performed the best
 
   Chose XGBRegressor as the final model
   train_test_split in 90% to 10% ratio
   Hyperparameters - learning_rate = 0.4, max_depth = 9, n_estimators = 1000, reg_alpha = 0
 
 Final Submission
-  was getting a few negative values in the prediction
-  So, converted them to 0
+  Found a few negative predicted values in the prediction
+  So, converted them to 0.
+  Final submission = submission.csv
