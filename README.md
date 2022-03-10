@@ -22,7 +22,7 @@
   The training and validation data was split in 9:1 ratio.
   Hyperparameters :- learning_rate = 0.4, max_depth = 9, n_estimators = 1000, reg_alpha = 0
 
-Final Submission
+<b>Final Submission</b><br>
   Found a few negative predicted values in the prediction
   So, converted them to 0.
   Final submission = submission.csv
