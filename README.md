@@ -11,7 +11,7 @@ EDA
   Date = pd.to_datetime(df[['Year', 'Month', 'Day', 'Hour', 'Minute']])
   Plotted the data for GHI over time and found yearly seasonality and trends in data
 
-ML
+<b>ML</b>
   Initially performed regressions using diff models 
   train_test_split in 80% to 20% ratio
   Linear Regressor, ExtraTrees, DecisionTrees, XGBRegressor
