@@ -1,8 +1,8 @@
 # Wipro-Hackathon
-Wipro Hackathon
+<b>Wipro Hackathon</b><br>
   A solar power generation company wants to optimize solar power production and needs the prediction model to predict ‘Clearsky DHI’, ‘Clearsky DNI’, ‘Clearsky GHI’. The data is     ten years at an interval of every 30 mins with the following data points:
 
-EDA
+<b>EDA</b><br>
   Checked for duplicates and NA values, found none.
   GHI = DNI*cos(Zenith-Angle) + DHI
   Using Pearson's correlation visualized a heatmap that showed relationship between all Features.
@@ -11,7 +11,7 @@ EDA
   Date = pd.to_datetime(df[['Year', 'Month', 'Day', 'Hour', 'Minute']])
   Plotted the data for GHI over time and found yearly seasonality and trends in data
 
-<b>ML</b>
+<b>ML</b><br>
   Initially performed regressions using diff models 
   train_test_split in 80% to 20% ratio
   Linear Regressor, ExtraTrees, DecisionTrees, XGBRegressor
